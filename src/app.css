@@ -1,0 +1,25 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+html,
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.icon-reseaux a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gitHub,
+.linkedin,
+.cv {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
