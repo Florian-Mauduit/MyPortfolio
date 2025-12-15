@@ -101,7 +101,7 @@
         /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); */
     }
     header.is-top {
-        background: #606c38;
+        background: #283618;
         color: #fefae0;
         backdrop-filter: none; /* pas de blur */
     }
@@ -111,7 +111,7 @@
     }
 
     header:hover {
-        background-color: #606c38;
+        background-color: #283618;
     }
     header:hover .menu-link,
     header:hover .title {
@@ -127,19 +127,19 @@
         font-size: 20px;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
             "Lucida Sans", Arial, sans-serif;
-        color: #344e41;
+        color: #283618;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
     }
     .menu-link:hover {
-        color: #344e41;
+        color: #283618;
         animation: glow 0.5s;
     }
 
     .title {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
             "Lucida Sans", Arial, sans-serif;
-        color: #344e41;
+        color: #283618;
     }
 
     @media (max-width: 600px) {

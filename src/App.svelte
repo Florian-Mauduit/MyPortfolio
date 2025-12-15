@@ -28,7 +28,7 @@
   <!-- Accueil -->
   <section
     id="home"
-    style="padding: 21rem 2rem; background: #606c38; color: white; text-align: center;"
+    style="padding: 21rem 2rem; background: #283618; color: white; text-align: center;"
   >
     <h2 style="font-size: 5.5rem; margin-bottom: 1rem;">
       Développeur front-end
@@ -69,8 +69,13 @@
 
   <section class="monCV">
     <h3>Téléchager mon cv</h3>
+    <button class="cv-btn"
+      ><a href="/cv-florian-mauduit-frontend-2025.pdf" target="_blank"
+        >Télécharger mon CV</a
+      ></button
+    >
     <!-- Crée un bouton pour afficher mon cv en version pdf et un bouton pour le télécharger directement -->
-    <!-- Point de vue de la mise en forme les mettre les en column -->
+    <!-- Point de vue de la mise en forme les mettre en column -->
   </section>
 
   <!-- Contact -->

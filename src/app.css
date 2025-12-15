@@ -23,3 +23,7 @@ body {
   height: 32px;
   cursor: pointer;
 }
+
+.cv-btn {
+  cursor: pointer;
+}

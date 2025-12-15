@@ -2,16 +2,16 @@
     import Icons from "./icons.svelte";
 
     const skills = [
-        { name: "React", Icons: "react" },
-        { name: "Svelte", Icons: "svelte" },
-        { name: "JavaScript", Icons: "js" },
-        { name: "HTML", Icons: "html" },
-        { name: "CSS", Icons: "css" },
-        { name: "Figma", Icons: "figma" },
-        { name: "wordpress", Icons: "wordpress" },
-        { name: "NodeJs", Icons: "nodeJs" },
-        { name: "MySQL", Icons: "mysql" },
-        { name: "Git", Icons: "git" },
+        { name: "React", Icons: "react", level: "Avancé" },
+        { name: "Svelte", Icons: "svelte", level: "Avancé" },
+        { name: "JavaScript", Icons: "js", level: "Avancé" },
+        { name: "HTML", Icons: "html", level: "Avancé" },
+        { name: "CSS", Icons: "css", level: "Avancé" },
+        { name: "Figma", Icons: "figma", level: "Avancé" },
+        { name: "wordpress", Icons: "wordpress", level: "Avancé" },
+        { name: "NodeJs", Icons: "nodeJs", level: "Avancé" },
+        { name: "MySQL", Icons: "mysql", level: "Avancé" },
+        { name: "Git", Icons: "git", level: "Avancé" },
     ];
 </script>
 
@@ -26,6 +26,7 @@
                 <div class="skill-card">
                     <Icons name={skill.Icons} />
                     <p>{skill.name}</p>
+                    <span class="skill-level">{skill.level}</span>
                 </div>
             {/each}
         </div>
@@ -37,65 +38,74 @@
         display: flex;
     }
     .competence {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: auto;
         padding: 6rem 6rem;
         background-color: #283618;
-    }
-
-    .competenceList {
-        padding: 6rem 6rem;
-        color: #fff;
-    }
-
-    .skills-section {
-        background: #111827;
-        color: #0ff;
-        padding: 6rem 2rem;
+        color: #fefae0;
         text-align: center;
     }
+
+    .titleCompetence {
+        font-size: 2rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    .competenceComp {
+        display: flex;
+        justify-content: center;
+    }
+
     .skills-grid {
         display: flex;
         flex-wrap: wrap;
-        flex-basis: 600px;
+        gap: 1.5rem;
+        max-width: 700px;
         justify-content: center;
-        justify-content: space-between;
-        margin: 0 auto;
-        /* width: 600px; */
     }
+
     .skill-card {
         background: #3a5a40;
         border: 1px solid #a3b18a;
-        border-radius: 10px;
-        padding: 1rem;
-        height: 120px;
-        width: 70px;
-        margin-right: 10px;
-        margin-top: 10px;
+        border-radius: 12px;
+        padding: 1rem 0.75rem;
+        width: 110px;
+        height: 130px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         transition:
-            transform 0.3s,
-            box-shadow 0.3s;
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            border-color 0.2s ease;
     }
     .skill-card:hover {
-        transform: scale(1.05);
-        box-shadow:
-            0 0 15px #dad7cd,
-            0 0 px #dad7cd;
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        border-width: 2px;
+        border-color: 5px #fefae0;
     }
+
+    .skill-level {
+        margin-top: 0.25rem;
+        font-size: 0.75rem;
+        color: #fefae0;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+    }
+
     .skill-card img {
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
         color: #dad7cd;
-        /* filter: drop-shadow(0 0 6px #0ff); */
     }
+
     .skill-card p {
         margin-top: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 600;
         font-size: 1rem;
-        color: #dad7cd;
-        /* text-shadow: 0 0 4px #0ff; */
+        color: #fefae0;
     }
 </style>
