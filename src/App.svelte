@@ -92,7 +92,7 @@
 
   <section class="monCV">
     <h3 class="titleCV">En savoir plus sur mon parcours</h3>
-    <p class="pCV">Mon CV est disponible au téléchargement.</p>
+    <p class="pCV">Mon CV est accessibles au téléchargement.</p>
     <a
       class="btnCv"
       href="/cv-florian-mauduit-frontend-2025.pdf"
