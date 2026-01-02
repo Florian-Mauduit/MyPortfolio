@@ -5,7 +5,7 @@
 
 html,
 body {
-  background-color: #f1f1f1;
+  background-color: #fff;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -26,4 +26,199 @@ body {
 
 .cv-btn {
   cursor: pointer;
+}
+
+/* section Accueil */
+
+.home {
+  padding: 21rem 2rem;
+  background: #283618;
+  color: white;
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Section Projet */
+
+.containerCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.containerProjet {
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.containerProjet h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+/* Section télécharger mon cv */
+
+.containerContact {
+  padding: 6rem 2rem;
+  background: #fff;
+  color: white;
+  text-align: center;
+}
+
+.titleCV {
+  font-size: 20px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.pCV {
+  color: #fff;
+  margin: 0px 0px 20px 0px;
+  font-size: 14px;
+}
+
+.monCV {
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: #283618;
+}
+
+.btnCv {
+  margin: 4px;
+  padding: 15px;
+  border: 2px;
+  background: #a3b18a;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 200px;
+}
+
+.btnCv:hover {
+  background: #fefae0;
+  color: #283618;
+}
+
+/* Section Contact */
+
+.titleContact {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black
+}
+
+.contact {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #222;
+}
+
+.email-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.email-btn {
+  font-size: 15px;
+  font-weight: 600;
+  background: #a3b18a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.email-btn:hover {
+  background: #283618;
+  transform: translateY(-1px);
+}
+
+.copied-notif {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #a3b18a;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.btnLinkedin {
+  /* display: inline-block; */
+  background: #0a66c2;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btnLinkedin:hover {
+  background: #004182;
+  transform: translateY(-1px);
+}
+
+
+/* animation fade in/out pour la notif */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background: #283618;
+  color: #fefae0;
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 21rem 0rem;
+  }
+
+  .home h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
 }

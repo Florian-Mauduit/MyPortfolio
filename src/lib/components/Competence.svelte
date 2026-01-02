@@ -20,7 +20,6 @@
         <h2 class="titleCompetence">Mes Compétences</h2>
     </div>
     <div class="competenceComp">
-        <!-- à prévoir / voir si ça peut être utile mettre l'expérience que j'ai sur les différentes techno avec un système de popup  -->
         <div class="skills-grid">
             {#each skills as skill}
                 <div class="skill-card">
@@ -38,7 +37,7 @@
         display: flex;
     }
     .competence {
-        padding: 6rem 6rem;
+        padding: 11rem 6rem;
         background-color: #283618;
         color: #fefae0;
         text-align: center;
@@ -71,7 +70,6 @@
         padding: 1rem 0.75rem;
         width: 110px;
         height: 130px;
-
         display: flex;
         flex-direction: column;
         align-items: center;

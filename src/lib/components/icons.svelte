@@ -10,6 +10,3 @@
         {@html icons[name]}
     </svg>
 {/if}
-
-<style>
-</style>

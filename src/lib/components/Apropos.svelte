@@ -5,15 +5,29 @@
         </div>
         <div class="p-aPropos">
             <p>
-                Développeur front-end confirmé, avec 3 ans d’expérience en
+                Développeur front-end confirmé avec 3 ans d’expérience en
                 start-up sur une plateforme SaaS, je conçois et développe des
-                interfaces React et Svelte centrées sur l’utilisateur. Habitué à
-                travailler en méthode agile, j’aime transformer des maquettes
-                Figma en expériences fluides, optimiser les parcours
-                utilisateurs et maintenir des sites WordPress performants.
-                Autonome, persévérant et avec un bon relationnel, je recherche
-                de nouvelles opportunités en télétravail ou hybride autour de
-                Chartres, Orléans, Le Mans et Paris.
+                interfaces web performantes et centrées sur l’utilisateur,
+                principalement avec React et Svelte. Habitué aux environnements
+                agiles, je travaille en étroite collaboration avec les équipes
+                produit et design pour transformer des maquettes Figma en
+                expériences fluides, accessibles et maintenables.
+            </p>
+            <p>
+                Au quotidien, j’accorde une attention particulière à
+                l’optimisation des parcours utilisateurs, à la qualité du code
+                et à la performance des applications, qu’il s’agisse de projets
+                modernes ou de sites WordPress à maintenir et faire évoluer.
+                Autonome, persévérant et doté d’un bon relationnel.
+            </p>
+            <p class="pDisponible">
+                Disponible — télétravail / hybride (Chartres, Orléans, Le Mans,
+                Paris) <a
+                    class="lienCV"
+                    href="/cv-florian-mauduit-frontend-2025.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">Télécharger mon CV</a
+                >
             </p>
         </div>
     </div>
@@ -22,7 +36,7 @@
 <style>
     .aPropos {
         display: flex;
-        padding: 4rem 1.5rem;
+        padding: 8rem 1.5rem;
         min-height: 40vh;
         background: #fefae0; /* exemple fond foncé */
         color: #283618;
@@ -39,10 +53,10 @@
     .titre {
         flex: 0 0 30%;
         display: flex;
-        align-items: center; /* centre le h2 verticalement */
-        justify-content: center; /* centre horizontalement */
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        border-left: 4px solid currentColor; /* accent visuel */
+        border-left: 4px solid currentColor;
         padding-left: 1rem;
     }
 
@@ -54,12 +68,30 @@
 
     .p-aPropos {
         flex: 1;
-        max-width: 650px;
+        max-width: 700px;
         line-height: 1.6;
         font-size: 1rem;
     }
 
-    /* version mobile */
+    .pDisponible {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .lienCV {
+        text-decoration: underline;
+        color: #283618;
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .lienCV:hover {
+        background-color: #283618;
+        color: #fefae0;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 15px;
+    }
+
     @media (max-width: 768px) {
         .aPropos-container {
             flex-direction: column;
